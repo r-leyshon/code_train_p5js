@@ -12,7 +12,10 @@ class Bubble {
   clicked() {
     let d = dist(mouseX, mouseY, this.x, this.y);
     if (d <= this.r) {
-          console.log("CLICKED ON BUBBLE!!!");
+      // mix up colours on click
+      this.red = this.green;
+      this.green = this.blue;
+      this.blue = this.red;
     }
 
 
