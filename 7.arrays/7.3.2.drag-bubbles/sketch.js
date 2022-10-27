@@ -4,7 +4,7 @@ function setup() {
   createCanvas(1600, 900);
 }
 
-function mouseDragged() {
+function mouseClicked() {
   let r = random(10, 50);
   let b = new Bubble(mouseX, mouseY, r, random(255), random(255), random(255));
   // add the bubble object into the bubbles array
