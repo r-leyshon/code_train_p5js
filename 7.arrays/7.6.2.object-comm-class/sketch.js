@@ -34,12 +34,14 @@ class Bubble {
   // moving intersection logic to within class
   intersects(other) {
     let d = dist(this.x, this.y, other.x, other.y);
+    // condensed
+    return (d < 0.5*this.r + 0.5*other.r);
 
-    if (d < 0.5 * this.r + 0.5 * other.r) {
-      return true;
-    } else {
-      return false;
-    }
+    // if (d < 0.5 * this.r + 0.5 * other.r) {
+    //   return true;
+    // } else {
+    //   return false;
+    // }
   }
 
   move() {
