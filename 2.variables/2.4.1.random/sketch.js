@@ -4,15 +4,14 @@ let lineWidth;
 
 function setup() {
   createCanvas(400, 300);
-  // dont update background
   background(100);
 
 }
 
 function draw() {
-  // move squareSize to update continuously
   squareSize = random(5, 250);
   lineWidth = random(4, 28);
+
 
   rectMode(CENTER);
   strokeWeight(lineWidth);
