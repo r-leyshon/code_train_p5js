@@ -2,7 +2,7 @@ let bubbles = [];
 let flower;
 
 function preload(){
-  flower = loadImage("../../www/daisy.png");
+  flower = loadImage("daisy.png");
 }
 
 function setup() {
