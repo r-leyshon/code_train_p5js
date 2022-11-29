@@ -51,7 +51,7 @@ function Snake() {
   };
 
   this.show = function () {
-    fill(255);
+    fill(color("#749F82"));
 
     for (let i = 0; i < this.tail.length; i++) {
       rect(this.tail[i].x, this.tail[i].y, scl, scl);

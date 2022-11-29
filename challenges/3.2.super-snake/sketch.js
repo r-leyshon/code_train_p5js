@@ -10,15 +10,19 @@ function setup() {
   s = new Snake();
   frameRate(10);
   pickLocation();
-  currTxt = createP("Current Score: " + current);
-  currTxt.style("color", "white");
-  currTxt.style("padding", "3px");
-  currTxt.style("background-color", "black");
+  createElement("br");
+  scoreCard = createDiv();
+  scoreCard.style("background-color", color("#425F57"));
+  scoreCard.style("color", color("#A8E890"));
 
-  maxTxt = createP("Maximum Score: " + maxScore)
-  maxTxt.style("background-color", "black");
-  maxTxt.style("padding", "3px");
-  maxTxt.style("color", "white");
+  scoreCard.style("padding", "3px");
+  scoreCard.style("width", "597px");
+
+  currTxt = createP("Current Score: " + current);
+  currTxt.parent(scoreCard)
+
+  maxTxt = createP("Maximum Score: " + maxScore);
+  maxTxt.parent(scoreCard);
 }
 
 function pickLocation() {
@@ -29,15 +33,16 @@ function pickLocation() {
 }
 
 function draw() {
-  background(50);
+  stroke(color("#A8E890"));
+  background(color("#425F57"));
   s.death();
   s.update();
   s.show();
   if (s.eat(food)) {
     pickLocation();
   }
-
-  fill(255, 0, 100);
+  noStroke();
+  fill(color("#CFFF8D"));
   rect(food.x, food.y, scl, scl);
 
   thisScore = s.score();
