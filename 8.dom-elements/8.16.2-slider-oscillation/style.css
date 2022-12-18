@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+#controller {
+  -webkit-appearance: none;
+  height: 3px;
+  -webkit-appearance: none;
+
+  /* Turns the cursor into the hand pointer icon when hovering over the slider  */
+  cursor: pointer;
+}
+
+#controller::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  background: red;
+  cursor: pointer;
+  -webkit-appearance: none;
+  /* negative top padding moves it up */
+  margin-top: -1%;
+
+  /* Border radius gives rounded corners, if they're big enough, you end up with circles */
+  border-radius: 20px;
+
+}
