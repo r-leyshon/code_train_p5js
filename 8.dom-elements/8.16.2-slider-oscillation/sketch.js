@@ -12,7 +12,7 @@ function setup() {
 
   }
   createP(
-    "Drag the red slider to control the offset value of the other silders. As the slider values are set with the `sin()` function, the effect is to control the frequency of the slider values."
+    "Drag the red slider to control the offset value of the other silders. As the slider values are set with the `sin()` function, the effect is to control the frequency of the resultant waves."
   );
 }
 
