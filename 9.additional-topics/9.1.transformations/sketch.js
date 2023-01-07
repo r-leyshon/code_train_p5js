@@ -1,6 +1,4 @@
 let angle = 0;
-let x = 50;
-let y = 50;
 
 function setup() {
   createCanvas(400, 400);
@@ -19,7 +17,7 @@ function draw() {
   push();
 
   // move the origin
-  translate(x, y);
+  translate(100, 100);
   rotate(angle);
 
   fill(170, 74, 68);
