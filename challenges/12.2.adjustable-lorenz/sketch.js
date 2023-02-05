@@ -51,6 +51,9 @@ function resetSketch() {
   a = origa;
   b = origb;
   c = origc;
+  sigmaIn.value(""+a);
+  rhoIn.value(""+b);
+  betaIn.value(""+c);
 
 }
 
