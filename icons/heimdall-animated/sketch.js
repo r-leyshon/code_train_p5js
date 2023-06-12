@@ -50,3 +50,9 @@ function draw() {
   textSize(60);
   text("Heimdall", 90, 460);
 }
+
+function keyPressed() {
+  if (key == "s"){
+    saveGif("Heimdall-icon.gif", 5)
+  }
+}
