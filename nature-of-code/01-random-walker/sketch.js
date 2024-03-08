@@ -3,7 +3,7 @@ let y = 350;
 let step_size = 5;
 
 function setup() {
-  createCanvas(1800, 1000);
+  createCanvas(1600, 700);
   background(0);
 }
 
