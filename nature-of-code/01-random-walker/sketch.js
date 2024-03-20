@@ -8,7 +8,7 @@ function setup() {
 }
 
 function draw() {
-  direction = int(random(3));
+  direction = int(random(4));
   if (direction == 0) {
     x -= step_size;
   } else if (direction == 1) {
