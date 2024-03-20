@@ -1,9 +1,9 @@
-let x = 800;
+let x = 700;
 let y = 350;
 let step_size = 5;
 
 function setup() {
-  createCanvas(1600, 700);
+  createCanvas(1400, 700);
   background(0);
 }
 
