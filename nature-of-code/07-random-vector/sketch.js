@@ -18,7 +18,7 @@ function setup() {
     translate(width / 2, height / 2);
     v = p5.Vector.random2D();
     // this will be length 1 by standard, so multiply by some length
-    v.mult(windowWidth*0.3);
+    v.mult(windowWidth*0.2);
     strokeWeight(4);
   
     for (let i = 0; i <= width; i++) {
